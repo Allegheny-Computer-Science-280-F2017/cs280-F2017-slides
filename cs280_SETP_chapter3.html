@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Computer Science 280: Principles of Software Development</title>
+
+    <meta name="description" content="Teaching Slides for Computer Science 280">
+    <meta name="author" content="Gregory M. Kapfhammer">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night-gkapfham.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/tomorrow&#45;night&#45;bright.css">         -->
+    <!-- <link rel="stylesheet" href="lib/css/tomorrow&#45;night&#45;bright.css"> -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Install Font Awesome and the Google Web fonts -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides">
+
+        <section data-background-transition="none" data-background="http://farm6.static.flickr.com/5465/8812569383_e208c899f8_b.jpg" style="background: rgba(29,31,33,0.9)">
+          <h1>Computer Science 280:</h1>
+          <h2>Principles of Software Development</h2>
+          <p>Gregory M. Kapfhammer</p>
+          <br /><small><a title="Wikimedia Hackathon 2013, Amsterdam" href="http://flickr.com/photos/ter-burg/8812569383">flickr photo</a> shared by <a href="http://flickr.com/people/ter-burg">Sebastiaan ter Burg</a> under a <a href="http://creativecommons.org/licenses/by/2.0/">Creative Commons ( BY ) license</a> </small>
+        </section>
+
+        <section>
+          <h1>Color Scheme</h1>
+          <p class="fragment"><b class="orange">Key Concept</b></p>
+          <p class="fragment"><b class="purple">Corresponding Diagram</b></p>
+          <p class="fragment"><b class="green">In-Class Discussion</b></p>
+          <p class="fragment"><b class="red">In-Class Activity</b></p>
+          <p class="fragment"><b class="blue">Details in SETP or MMM</b></p>
+        </section>
+
+        <section>
+          <h1>Project Management</h1>
+        </section>
+
+        <section>
+          <h1>Deliverables</h1>
+          <p class="fragment">Documents</p>
+          <p class="fragment">Feature demonstrations</p>
+          <p class="fragment">Demonstrations of characteristics</p>
+          <p class="fragment">What characteristics?</p>
+          <p class="fragment">Reliability, security, performance</p>
+        </section>
+
+        <section>
+          <h1>Activity</h1>
+          <p class="fragment"><b class="orange">Part of the project that takes place over a period of time</b></p>
+          <p class="fragment"><b class="green">An example of this in the context of software engineering?</b></p>
+        </section>
+
+        <section>
+          <h1>Milestone</h1>
+          <p class="fragment"><b class="orange">Completion of an activity at a particular point in time</b></p>
+          <p class="fragment"><b class="green">An example of this in the context of software engineering?</b></p>
+        </section>
+
+        <section>
+          <h1>Activity Graphs</h1>
+          <p class="fragment"><b class="blue">Nodes and edges</b></p>
+          <p class="fragment"><b class="blue">Critical paths?</b></p>
+          <p class="fragment"><b class="blue">Calculate Slack time</b></p>
+          <p class="fragment"><b class="orange">Consider and plan for time and resource constraints!</b></p>
+        </section>
+
+        <section>
+          <h1>Critical Path Method</h1>
+          <p class="fragment">Longest path with a slack of zero</p>
+          <p class="fragment">Path that determines whether you are on schedule</p>
+          <p class="fragment">More than one in the activity graph</p>
+          <p class="fragment"><b class="orange">No margin for error when performing these tasks!</b></p>
+        </section>
+
+        <section>
+          <h1>Gantt Chart</h1>
+          <p class="fragment">Another visualization of project progress</p>
+          <p class="fragment">Many software tools support their creation</p>
+          <p class="fragment">Allows for the definition of tasks and milestones</p>
+          <p class="fragment"><b class="orange">The <code>pgfgantt</code> package is an option!</b></p>
+        </section>
+
+        <section data-background-transition="none" data-background="https://farm3.staticflickr.com/2624/3784049371_86be198368_o.jpg" style="">
+        </section>
+
+        <section data-background-transition="none" data-background="https://farm3.staticflickr.com/2624/3784049371_86be198368_o.jpg" style="background: rgba(29,31,33,0.9)">
+          <h1>Staff Roles</h1>
+          <p class="fragment"><b class="blue">Review page 95 for a nice listing!</b></p>
+          <p class="fragment"><b class="green">What roles have you been fulfilling?</b></p>
+          <p class="fragment"><b class="green">How well have you performed in them?</b></p>
+          <p class="fragment"><b class="green">Do you like the roles you picked?</b></p>
+          <br /><small><a title="Two People - Business Meeting" href="http://flickr.com/photos/mydigitalslrcamera/3784049371">flickr photo</a> shared by <a href="http://flickr.com/people/mydigitalslrcamera">MyDigitalSLR</a> under a <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons ( BY-NC-ND ) license</a> </small>
+        </section>
+
+        <section>
+          <h1>Work Styles</h1>
+          <p class="fragment">Extroverts and introverts</p>
+          <p class="fragment">Intuitive and rational</p>
+          <p class="fragment"><b class="blue">See Figure 3.10 for a nice summary!</b></p>
+          <p class="fragment"><b class="red">Organize yourselves according to this grid</b></p>
+          <p class="fragment"><b class="green">What does this tell us about our teams?</b></p>
+        </section>
+
+        <section>
+          <h1><b class="green">Structure Versus Creativity</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Effort Estimation</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="blue">Causes of Inaccurate Estimates</b></h1>
+        </section>
+
+        <section data-background-transition="none" data-background="http://farm6.static.flickr.com/5592/14703171688_7ae3be1417_b.jpg" style="">
+        </section>
+
+        <section data-background-transition="none" data-background="http://farm6.static.flickr.com/5592/14703171688_7ae3be1417_b.jpg" style="background: rgba(29,31,33,0.9)">
+          <h1>Estimation Strategies</h1>
+          <p class="fragment">Expert judgement</p>
+          <p class="fragment">Human-derived equations</p>
+          <p class="fragment">Machine-derived equations</p>
+          <br /><small><a title="SRP Estimation Jar Winner" href="http://flickr.com/photos/jsyk/14703171688">flickr photo</a> shared by <a href="http://flickr.com/people/jsyk">Pioneer Library System</a> under a <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons ( BY-NC-ND ) license</a> </small>
+        </section>
+
+        <section>
+          <h1>Risk Management</h1>
+          <p class="fragment"><b class="blue">See Sidebar 3.4 on Page 119</b></p>
+          <p class="fragment"><b class="green">Have you seen these risks in your teams?</b></p>
+          <p class="fragment"><b class="orange">Must practice assessment and control!</b></p>
+          <p class="fragment"><b class="blue">See Figure 3.15 on Page 121</b></p>
+        </section>
+
+      </div>
+
+      <script src="lib/js/head.min.js"></script>
+      <script src="js/reveal.min.js"></script>
+
+      <script>
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+          controls: true,
+          progress: true,
+          history: true,
+          center: true,
+
+          theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+          transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
+
+            // Optional libraries used to extend on reveal.js
+          dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+              { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          ]
+        });
+
+      </script>
+
+  </body>
+</html>
