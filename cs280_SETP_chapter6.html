@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Computer Science 280: Principles of Software Development</title>
+
+    <meta name="description" content="Teaching Slides for Computer Science 280">
+    <meta name="author" content="Gregory M. Kapfhammer">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night-gkapfham.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/tomorrow&#45;night&#45;bright.css">         -->
+    <!-- <link rel="stylesheet" href="lib/css/tomorrow&#45;night&#45;bright.css"> -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Install Font Awesome and the Google Web fonts -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides">
+
+        <section data-background-transition="none" data-background="http://farm6.static.flickr.com/5465/8812569383_e208c899f8_b.jpg" style="background: rgba(29,31,33,0.9)">
+          <h1>Computer Science 280:</h1>
+          <h2>Principles of Software Development</h2>
+          <p>Gregory M. Kapfhammer</p>
+          <br /><small><a title="Wikimedia Hackathon 2013, Amsterdam" href="http://flickr.com/photos/ter-burg/8812569383">flickr photo</a> shared by <a href="http://flickr.com/people/ter-burg">Sebastiaan ter Burg</a> under a <a href="http://creativecommons.org/licenses/by/2.0/">Creative Commons ( BY ) license</a> </small>
+        </section>
+
+        <section>
+          <h1>Color Scheme</h1>
+          <p class="fragment"><b class="orange">Key Concept</b></p>
+          <p class="fragment"><b class="purple">Corresponding Diagram</b></p>
+          <p class="fragment"><b class="green">In-Class Discussion</b></p>
+          <p class="fragment"><b class="red">In-Class Activity</b></p>
+          <p class="fragment"><b class="blue">Details in SETP or MMM</b></p>
+        </section>
+
+        <section>
+          <h1>Design Principles</h1>
+          <p class="fragment">Modularity</p>
+          <p class="fragment">Interfaces</p>
+          <p class="fragment">Information Hiding</p>
+          <p class="fragment">Incremental Development</p>
+          <p class="fragment">Abstraction</p>
+          <p class="fragment">Generality</p>
+        </section>
+
+        <section>
+          <h1><b class="orange">Crucial for building good software!</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Modularity</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Separation of Concerns</b></h1>
+        </section>
+
+        <section>
+          <h1>Coupling</h1>
+          <p class="fragment">No Coupling</p>
+          <p class="fragment">Tight Coupling</p>
+          <p class="fragment">Loose Coupling</p>
+          <p class="fragment"><b class="green">Which type of coupling is better?</b></p>
+          <p class="fragment"><b class="green">Which type of coupling supports change?</b></p>
+          <p class="fragment"><b class="blue">Refer to Figure 6.1 for diagrams with examples</b></p>
+          <p class="fragment"><b class="blue">There are different types of coupling (e.g., data)</b></p>
+        </section>
+
+        <section>
+          <h1>Interfaces</h1>
+          <p class="fragment"><b class="orange">Defines what services a unit will provide</b></p>
+          <p class="fragment">Provides "signatures" for the methods of a unit</p>
+          <p class="fragment"><b class="orange">Often formulated as a design contract</b></p>
+          <p class="fragment"><b class="blue">Given as invariants and pre- and post-conditions</b></p>
+          <p class="fragment"><b class="orange">Units often contain accessors and mutators</b></p>
+          <p class="fragment"><b class="green">Any questions about the use of interfaces?</b></p>
+        </section>
+
+        <section>
+          <h1>Information Hiding</h1>
+          <p class="fragment"><b class="orange">Hide the design decisions for a software unit</b></p>
+          <p class="fragment">Make software systems easier to understand and maintain</p>
+          <p class="fragment"><b class="green">What are the aspects of software that we hide?</b></p>
+          <p class="fragment"><b class="blue">Data representation, algorithm, task sequence</b></p>
+          <p class="fragment"><b class="green">Any questions about the use of interfaces?</b></p>
+        </section>
+
+        <section>
+          <h1>Incremental Development</h1>
+          <p class="fragment"><b class="orange">Consider how modules "use" other modules</b></p>
+          <p class="fragment">Try to minimize the number of not-needed dependencies</p>
+          <p class="fragment"><b class="blue">Implement modules of the system incrementally</b></p>
+          <p class="fragment"><b class="green">Why is this possible if dependencies are few?</b></p>
+        </section>
+
+        <section>
+          <h1><b class="orange">Abstraction omits details for improved focus</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Generality of software promotes effective reuse</b></h1>
+        </section>
+
+        <section>
+          <h1>Object-oriented design</h1>
+          <p class="fragment">Encapsulation</p>
+          <p class="fragment">Inheritance</p>
+          <p class="fragment">Polymorphism</p>
+        </section>
+
+        <section>
+          <h1><b class="blue">Unified Modelling Language in Figure 6.16</b></h1>
+        </section>
+
+        <section>
+          <h1>UML Diagrams</h1>
+          <p class="fragment">Package Diagram</p>
+          <p class="fragment">Class Diagram</p>
+          <p class="fragment">Sequence Diagram</p>
+          <p class="fragment">Communication Diagram</p>
+          <p class="fragment">State Diagram</p>
+          <p class="fragment"><b class="blue">There are other types of diagrams as well!</b></p>
+          <p class="fragment"><b class="green">What are the strengths and weaknesses of diagrams?</b></p>
+        </section>
+
+        <section>
+          <h1><b class="orange">Object-oriented Design Patterns</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Singleton Design Pattern</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Visitor Design Pattern</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="green">Trade-offs associated with design patterns?</b></h1>
+        </section>
+
+        <section>
+          <h1>Design Considerations</h1>
+          <p class="fragment">Data Management</p>
+          <p class="fragment">Exception Handling</p>
+          <p class="fragment">User Interfaces</p>
+          <p class="fragment">Toolkits and Frameworks</p>
+          <p class="fragment"><b class="green">What are the trade-offs in using frameworks?</b></p>
+        </section>
+
+        <section>
+          <h1><b class="orange">Object-Oriented Measurement</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Cyclomatic Complexity</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Non-commented source statements</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Afferent and Efferent Coupling</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="green">Results from the recent laboratory assignment?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="green">Can you use these to guide software development?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="green">Can you create these from existing software?</b></h1>
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+        { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

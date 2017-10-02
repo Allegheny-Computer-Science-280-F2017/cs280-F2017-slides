@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Computer Science 280: Principles of Software Development</title>
+
+    <meta name="description" content="Teaching Slides for Computer Science 280">
+    <meta name="author" content="Gregory M. Kapfhammer">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night-gkapfham.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/tomorrow&#45;night&#45;bright.css">         -->
+    <!-- <link rel="stylesheet" href="lib/css/tomorrow&#45;night&#45;bright.css"> -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Install Font Awesome and the Google Web fonts -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides">
+
+        <section data-background-transition="none" data-background="http://farm6.static.flickr.com/5465/8812569383_e208c899f8_b.jpg" style="background: rgba(29,31,33,0.9)">
+          <h1>Computer Science 280:</h1>
+          <h2>Principles of Software Development</h2>
+          <p>Gregory M. Kapfhammer</p>
+          <br /><small><a title="Wikimedia Hackathon 2013, Amsterdam" href="http://flickr.com/photos/ter-burg/8812569383">flickr photo</a> shared by <a href="http://flickr.com/people/ter-burg">Sebastiaan ter Burg</a> under a <a href="http://creativecommons.org/licenses/by/2.0/">Creative Commons ( BY ) license</a> </small>
+        </section>
+
+        <section>
+          <h1>Color Scheme</h1>
+          <p class="fragment"><b class="orange">Key Concept</b></p>
+          <p class="fragment"><b class="purple">Corresponding Diagram</b></p>
+          <p class="fragment"><b class="green">In-Class Discussion</b></p>
+          <p class="fragment"><b class="red">In-Class Activity</b></p>
+          <p class="fragment"><b class="blue">Details in SETP or MMM</b></p>
+        </section>
+
+        <section>
+          <h1><b class="red">Why are software requirements so important?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="blue">Refer to Sidebar 4.1 for more details!</b></h1>
+        </section>
+
+        <section>
+          <h1>Requirements Process</h1>
+          <p class="fragment"><b class="orange">A requirement is a statement of desired behavior</b></p>
+          <p class="fragment"><b class="orange">Deals with objects or entities ... </b></p>
+          <p class="fragment"><b class="orange">... the states that objects the can be in ...</b></p>
+          <p class="fragment"><b class="orange">... the functions that are performed to changes states</b></p>
+        </section>
+
+        <section>
+          <h1><b class="orange">Requirements don't say how to implement a system!</b></h1>
+        </section>
+
+        <section>
+          <h1>Types of Requirements</h1>
+          <p class="fragment">Functional (behavioral) requirements</p>
+          <p class="fragment">Non-functional (quality) requirements</p>
+          <p class="fragment"><b class="green">Examples of these for your current project?</b></p>
+          <p class="fragment">May also have design and process constraints</p>
+          <p class="fragment"><b class="blue">See Table 4.2 for a listing of requirements types</b></p>
+        </section>
+
+        <section>
+          <h1>Testable Requirements</h1>
+          <p class="fragment">Write requirements that you can actually verify!</p>
+          <p class="fragment">Define objective standards for evaluating your solutions</p>
+          <p class="fragment">Use focus groups to determine the best fit criteria</p>
+          <p class="fragment">Use quantitative statements whenever you can</p>
+        </section>
+
+        <section>
+          <h1>Testable Requirements</h1>
+          <p class="fragment"><b class="orange">Quantify each adverb and adjective </b></p>
+          <p class="fragment"><b class="orange">Replace pronouns with the names of entities</b></p>
+          <p class="fragment"><b class="orange">Define every noun in exactly one place</b></p>
+          <p class="fragment"><b class="green">Did you take this advice for your last assignment?</b></p>
+        </section>
+
+        <section>
+          <h1>Requirements Documents</h1>
+          <p class="fragment"><b class="blue">Requirements definition for the clients and users</b></p>
+          <p class="fragment"><b class="blue">Requirements specification for the technical team</b></p>
+          <p class="fragment"><b class="orange">Sometimes, these are combined into one!</b></p>
+        </section>
+
+        <section>
+          <h1>Requirements</h1>
+          <p class="fragment">... are they correct?</p>
+          <p class="fragment">... are they consistent?</p>
+          <p class="fragment">... are they unambiguous?</p>
+          <p class="fragment">... are they complete?</p>
+          <p class="fragment">... are they feasible?</p>
+          <p class="fragment">... are they all relevant?</p>
+          <p class="fragment">... are they testable?</p>
+          <p class="fragment">... are they traceable?</p>
+        </section>
+
+        <section>
+          <h1><b class="orange">Answer "yes" to all of these questions!</b></h1>
+        </section>
+
+        <section data-background-transition="none" data-background="http://farm8.static.flickr.com/7179/6816581220_dc7612d8dd_b.jpg" style="">
+        </section>
+
+        <section data-background-transition="none" data-background="http://farm8.static.flickr.com/7179/6816581220_dc7612d8dd_b.jpg" style="background: rgba(29,31,33,0.9)">
+          <h1>Faults in Requirements</h1>
+          <p class="fragment"><b class="blue">See Sidebar 4.8 for some interesting insights!</b></p>
+          <p class="fragment">Real-world defects are due to mistakes in requirements</p>
+          <p class="fragment"><b class="orange">"Invade the system early &mdash; and are the last to leave!"</b></p>
+          <p class="fragment"><b class="orange">"Only caught after hundreds of sites have been installed"</b></p>
+          <br /><small><a title="Tablet use 1" href="http://flickr.com/photos/ebayink/6816581220">flickr photo</a> shared by <a href="http://flickr.com/people/ebayink">ebayink</a> under a <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons ( BY-NC-ND ) license</a> </small>
+        </section>
+
+        <section>
+          <h1>Requirements "Readiness"</h1>
+          <p class="fragment"><b class="blue">Five levels for rating each of a system's requirements</b></p>
+          <p class="fragment"><b class="blue">See the top of page 205 for descriptions of the levels</b></p>
+          <p class="fragment"><b class="blue">Look at Figure 4.28 for examples of histograms</b></p>
+          <p class="fragment"><b class="green">Which one of these graphs is more desirable? Why?</b></p>
+        </section>
+
+      </div>
+
+      <script src="lib/js/head.min.js"></script>
+      <script src="js/reveal.min.js"></script>
+
+      <script>
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+          controls: true,
+          progress: true,
+          history: true,
+          center: true,
+
+          theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+          transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
+
+            // Optional libraries used to extend on reveal.js
+          dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+              { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          ]
+        });
+
+      </script>
+
+  </body>
+</html>
